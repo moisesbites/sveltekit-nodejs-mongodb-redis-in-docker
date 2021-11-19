@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  mongo:
+    build:
+      context: ./mongo
+      dockerfile: Dockerfile
+    image: mongo-0.0.1
+  haproxy:
+    build:
+      context: ./haproxy
+      dockerfile: Dockerfile
+    image: haproxy-0.0.1
+  redis:
+    build:
+      context: ./redis
+      dockerfile: Dockerfile
+    image: redis-0.0.1
+  node:
+    build:
+      context: ./node
+      dockerfile: Dockerfile
+    image: node-0.0.1

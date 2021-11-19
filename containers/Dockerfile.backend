@@ -1,0 +1,10 @@
+FROM node-0.0.1
+
+LABEL author_name Moisés Bites
+
+COPY backend /home/node/app
+
+WORKDIR /home/node/app
+
+
+    
